@@ -1,0 +1,2 @@
+Modified h264 encoder sources for Allwinner A31s, A80, A33, H3, H8 CPUs
+original sources are located here: https://github.com/jemk/cedrus.git
