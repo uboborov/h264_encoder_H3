@@ -5,19 +5,21 @@ This is a basic example for using the H264 hardware encoder for sunxi SoCs.
 
 *It is just a proof of concept and not recommended for production use!*
 
-================================= U P D =================================================
+U P D:
+-------
 Modified for devices which are using ion memory allocator and VE hardware 
 older than or equal to VE1633 i.e. A31s, A80, A33, H3, H8.
 Sources are stored in common_ion folder. 
 Makefile has a hardcoded parameter ION = _ion to build from folder common_ion
 Modified version of the software has been tested on OPI PC board based on H3 CPU
 with cmd line as shown below
-  encoding from usb camera:
-  ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -pix_fmt nv12 -r 25 -f rawvideo pipe: | ./h264enc - 640 480 test.h264
+
+    encoding from usb camera:
+    ffmpeg -f v4l2 -video_size 640x480 -i /dev/video0 -pix_fmt nv12 -r 25 -f rawvideo pipe: | ./h264enc - 640 480 test.h264
   
-  decoding:
-  mpv --vo=vdpau --hwdec=vdpau --hwdec-codecs=all test.h264 
-=========================================================================================
+    decoding:
+    mpv --vo=vdpau --hwdec=vdpau --hwdec-codecs=all test.h264 
+
 
 Limitations:
 ------------
