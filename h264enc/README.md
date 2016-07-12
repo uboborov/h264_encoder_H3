@@ -8,7 +8,7 @@ This is a basic example for using the H264 hardware encoder for sunxi SoCs.
 U P D:
 -------
 Modified for devices which are using ion memory allocator and VE hardware 
-older than or equal to VE1633 i.e. A31s, A80, A33, H3, H8.
+newer than or equal to VE1633 i.e. A31s, A80, A33, H3, H8.
 Sources are stored in common_ion folder. 
 Makefile has a hardcoded parameter ION = _ion to build from folder common_ion
 Modified version of the software has been tested on OPI PC board based on H3 CPU
